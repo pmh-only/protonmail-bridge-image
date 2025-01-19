@@ -2,7 +2,7 @@ FROM alpine AS build
 
 WORKDIR /app
 
-RUN apk add make git pkgconfig bash go libsecret-dev gcc
+RUN apk add make git pkgconfig bash go libsecret-dev gcc musl-dev
 
 ARG VERSION
 
